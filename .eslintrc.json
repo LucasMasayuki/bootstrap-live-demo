@@ -1,0 +1,49 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": "airbnb-base",
+    "rules": {
+        "no-console": "off",
+        "no-debugger": "off",
+        "no-unused-vars": "off",
+        "no-useless-escape": "off",
+        "no-use-before-define": "off",
+        "class-methods-use-this": "off",
+        "prefer-const": "off",
+        "max-len": "off",
+        "no-underscore-dangle": "off",
+        "no-alert": "off",
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "prefer-destructuring": [
+            "error", {
+                "VariableDeclarator": {
+                    "array": false,
+                    "object": true
+                },
+                "AssignmentExpression": {
+                    "array": false,
+                    "object": false
+                }
+            }, {
+                "enforceForRenamedProperties": false
+            }
+        ]
+    }
+}
