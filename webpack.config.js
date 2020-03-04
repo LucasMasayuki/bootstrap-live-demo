@@ -1,6 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
@@ -17,11 +17,17 @@ module.exports = {
                     options: {
                         bypassOnDebug: true,
                     },
-                }
-            ]
+                },
+            ],
         },
-        { test: /\.html$/, loader: 'html-loader' },
-        { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+        {
+            test: /\.html$/,
+            loader: 'html-loader',
+        },
+        {
+            test: /\.css$/,
+            use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        },
         {
             test: /\.js$/,
             exclude: /node_modules/,
@@ -35,7 +41,7 @@ module.exports = {
         $: 'jQuery',
     },
     plugins: [
-        new CleanWebpackPlugin(['js/dist', 'css/dist']),
+        new CleanWebpackPlugin(),
         new webpack.ProvidePlugin({
             jQuery: 'jquery',
             $: 'jquery',
@@ -43,15 +49,13 @@ module.exports = {
             'window.$': 'jquery',
         }),
         new MiniCssExtractPlugin({
-            allChunks: true,
-            filename: 'css/[name].css',
+            filename: 'css/[name]_min.css',
             chunkFilename: 'css/[id].css',
-            path: path.resolve(__dirname, 'js/dist/css'),
         }),
     ],
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'js/dist/app'),
-        publicPath: 'js/dist/app',
+        path: path.resolve(__dirname, 'generated'),
+        publicPath: 'generated',
     },
 }
