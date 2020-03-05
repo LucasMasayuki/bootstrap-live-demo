@@ -1,3 +1,50 @@
-img {
-    max-width: 100%;
+.container-fluid {
+    padding: 0;
+}
+
+section {
+    background-color: white;
+}
+
+.btn-go-to-documentation {
+    background-color: #343a40!important;
+    border-radius: 30px;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    left: 40%;
+    right: 40%;
+    text-transform: uppercase;
+    top: 89%;
+}
+
+.group-box-container {
+    bottom: 0;
+    color: white;
+    right: 0;    
+    width: 19em
+}
+
+.line{
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }
