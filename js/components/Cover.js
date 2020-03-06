@@ -10,7 +10,6 @@ export default class Cover {
 
     static drawGroupName() {
         let groupBox = $('.js-group-names')
-        console.log(GroupBox.render())
         groupBox.html(GroupBox.render())
     }
 }

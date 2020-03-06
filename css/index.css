@@ -7,14 +7,20 @@ section {
     background-color: white;
 }
 
+.cover-img-container {
+  background: linear-gradient(90deg, #6a3093, #a044ff);
+}
+
 .container-fluid {
   padding: 0;
 }
 
 .bd-navbar {
-  position: sticky;
-  bottom: 0;
-  top: 0;
+  z-index: 1030;
+}
+
+.cover-img {
+  max-height: 600px;
 }
 
 .btn-go-to-documentation {
