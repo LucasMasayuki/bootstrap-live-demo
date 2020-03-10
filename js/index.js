@@ -2,15 +2,15 @@ import 'bootstrap'
 
 import $ from 'jquery'
 import Cover from './components/Cover'
-import NavBar from './components/NavBar'
+import Navbar from './components/Navbar'
 import IntroductionSection from './components/IntroductionSection'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '../css/index.css'
+import '../sass/index.sass'
 
 let body = $('.js-index-body')
 
-body.append(NavBar.render())
+body.append(Navbar.render())
 body.append(Cover.render())
 
 Cover.drawGroupName()

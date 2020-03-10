@@ -1,7 +1,8 @@
 import $ from 'jquery'
 
 import GroupBox from './GroupBox'
-import cover from '../../html/cover.html'
+import cover from '../../templates/cover.html'
+import '../../sass/components/cover.sass'
 
 export default class Cover {
     static render() {

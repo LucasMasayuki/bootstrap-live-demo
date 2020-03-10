@@ -1,7 +1,8 @@
 import $ from 'jquery'
 import Mustache from 'mustache'
 
-import groupBox from '../../html/group_box.html'
+import groupBox from '../../templates/group_box.html'
+import '../../sass/components/group_box.sass'
 
 export default class GroupBox {
     static render() {

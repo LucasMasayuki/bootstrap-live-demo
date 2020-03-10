@@ -1,8 +1,9 @@
 import $ from 'jquery'
 
-import navbar from '../../html/navbar.html'
+import navbar from '../../templates/navbar.html'
+import '../../sass/components/navbar.sass'
 
-export default class NavBar {
+export default class Navbar {
     static render() {
         return $(navbar).html()
     }
