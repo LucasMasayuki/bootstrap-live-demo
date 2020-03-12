@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+let HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: {
@@ -16,7 +16,7 @@ module.exports = {
         rules: [{
             test: /\.(png|jpg|gif)$/i,
             use: [
-                 {
+                {
                     loader: 'file-loader',
                     options: {
                         outputPath: path.resolve(__dirname, 'dist'),
@@ -28,7 +28,7 @@ module.exports = {
             test: /\.html$/,
             use: [
                 'html-loader',
-            ]
+            ],
         },
         {
             test: /\.css$/,
@@ -41,7 +41,7 @@ module.exports = {
             test: /\.(sass|scss)$/,
             use: [
                 MiniCssExtractPlugin.loader,
-                "css-loader",
+                'css-loader',
                 'sass-loader',
             ],
         },
@@ -64,32 +64,32 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             allChunks: true,
-            filename: "css/[name].css",
-            chunkFilename: "css/[name].css",
+            filename: 'css/[name].css',
+            chunkFilename: 'css/[name].css',
             path: path.resolve(__dirname, 'js/dist/css'),
         }),
         new HtmlWebpackPlugin({
-            template: "index.html"
+            template: 'index.html'
         }),
         new HtmlWebpackPlugin({
             chunks: [],
-            filename:"templates/cover.html",
-            template: "templates/cover.html"
+            filename: 'templates/cover.html',
+            template: 'templates/cover.html',
         }),
         new HtmlWebpackPlugin({
             chunks: [],
-            filename:"templates/group_box.html",
-            template: "templates/group_box.html"
+            filename: 'templates/group_box.html',
+            template: 'templates/group_box.html',
         }),
         new HtmlWebpackPlugin({
             chunks: [],
-            filename:"templates/introduction_section.html",
-            template: "templates/introduction_section.html"
+            filename: 'templates/introduction_section.html',
+            template: 'templates/introduction_section.html',
         }),
         new HtmlWebpackPlugin({
             chunks: [],
-            filename:"templates/navbar.html",
-            template: "templates/navbar.html"
+            filename: 'templates/navbar.html',
+            template: 'templates/navbar.html',
         }),
     ],
 }
