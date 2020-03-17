@@ -55,7 +55,9 @@ module.exports = {
         }],
     },
     plugins: [
-        new CleanWebpackPlugin(),
+        new CleanWebpackPlugin({
+            cleanOnceBeforeBuildPatterns: ['dist'],
+        }),
         new webpack.ProvidePlugin({
             jQuery: 'jquery',
             $: 'jquery',
@@ -66,7 +68,7 @@ module.exports = {
             allChunks: true,
             filename: 'css/[name].css',
             chunkFilename: 'css/[name].css',
-            path: path.resolve(__dirname, 'js/dist/css'),
+            path: path.resolve(__dirname, 'dist/css'),
         }),
         new HtmlWebpackPlugin({
             template: 'index.html'

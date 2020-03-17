@@ -42,7 +42,8 @@
     "start": "(cd dist && python -m SimpleHTTPServer)",
     "predeploy": "webpack --mode production --config webpack.prod.js",
     "deploy": "gh-pages -d dist",
-    "watch": "webpack --watch --mode development --config webpack.dev.js"
+    "watch": "webpack --watch --mode development --config webpack.dev.js",
+    "compile": "webpack --mode development --config webpack.dev.js"
   },
   "repository": {
     "type": "git",
