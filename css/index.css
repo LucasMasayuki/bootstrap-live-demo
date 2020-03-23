@@ -1,8 +1,14 @@
-.group-box-container{bottom:0;color:white;right:0;width:24em}
+.group-box-container{bottom:0;color:white;white-space:nowrap}.group-box-container .row .col{text-align:center}
 
-.cover-img-container{background:linear-gradient(90deg, #6a3093, #a044ff)}.cover-img-container .cover-img{max-height:600px}.cover-img-container .btn-go-to-documentation{background-color:#343a40 !important;border-radius:30px;color:white;font-size:medium;font-weight:bold;left:40%;right:40%;text-transform:uppercase;top:89%}
+.cover-img-container{background:linear-gradient(90deg, #6a3093, #a044ff);padding:3% 0}.cover-img-container .col-left-cover{align-self:center}.cover-img-container .cover-img{max-height:100%}.cover-img-container .btn-go-to-documentation{background-color:#343a40 !important;border-radius:30px;color:white;font-size:larger;font-weight:bolder;text-transform:uppercase}
 
 .bd-navbar{z-index:1030}
 
-body{font-family:monospace;overflow-x:hidden}body .container-fluid{padding:0}
+#instalation-section .description{color:gray;font-weight:bold;margin-top:10px}
+
+.comparison-section{margin:30px 0px}.comparison-section .title-row{margin-bottom:40px}.comparison-section .inside-container,.comparison-section .outside-container,.comparison-section .example-col{height:100px}.comparison-section .example-col-outside,.comparison-section .outside-container{background-color:sandybrown;padding:0}.comparison-section .code-col{position:relative;left:40%}.comparison-section .primary-idented-tag{margin-left:20px}.comparison-section .example-col-outside{background-color:gold;border:2px solid darkmagenta}.comparison-section .example-col-outside span{bottom:25%;position:relative;top:25%}.comparison-section .outside-container .inside-container{background-color:cornflowerblue}
+
+body{overflow-x:hidden}body .row{margin:15px 0px}body .main-container{padding:0}
+
+pre{overflow-y:hidden;white-space:normal}pre code{text-align:unset;white-space:nowrap}pre code .tag{color:#2f6f9f}pre code .atributes{color:#4f9fcf}pre code .commas-word{color:#d44950}
 
