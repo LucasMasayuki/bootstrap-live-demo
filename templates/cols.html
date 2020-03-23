@@ -1,0 +1,14 @@
+<template id="cols">
+    <div class="row">
+        {{#all_classes}}
+            <div class="col-{{col_class}} example-col example-col-outside">
+                <span>col-{{col_class}}</span>
+            </div>
+        {{/all_classes}}
+        {{#single_class}}
+            <div class="col-{{single_class.extra_class}} example-col example-col-outside">
+                <span>col-{{single_class.extra_class}}</span>
+            </div>
+        {{/single_class}}
+    </div>
+</template>

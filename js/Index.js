@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import InstalationSection from './components/InstalationSection'
 import IntroductionSection from './components/IntroductionSection'
 import ResponsiveSection from './components/ResponsiveSection'
+import Cols from './components/Cols'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../sass/index.sass'
@@ -21,3 +22,6 @@ Cover.drawGroupName()
 body.append(IntroductionSection.render())
 body.append(InstalationSection.render())
 body.append(ResponsiveSection.render())
+
+Cols.appendListenner()
+Cols.renderCols(12)

@@ -1,0 +1,26 @@
+<template id="code-col">
+    <code data-lang="html">
+        <span class="tag">&lt;div</span>
+        <span class="atributes"> class=</span>
+        <span class="commas-word">"container"</span>
+        <span class="tag">&gt;</span>
+        <br>
+        {{#all_classes}}
+            <span class="primary-idented-tag tag">&lt;div</span>
+            <span class="atributes"> class=</span>
+            <span class="commas-word">"col-{{col_class}}"</span>
+            <span class="tag">&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+            <br>
+        {{/all_classes}}
+        {{#single_class}}
+            <span class="primary-idented-tag tag">&lt;div</span>
+            <span class="atributes"> class=</span>
+            <span class="commas-word">"col-{{single_class.extra_class}}"</span>
+            <span class="tag">&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+            <br>
+        {{/single_class}}
+        <span class="tag">&lt;/div&gt;</span>
+    </code>
+</template>
