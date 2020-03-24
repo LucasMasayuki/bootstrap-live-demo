@@ -6,7 +6,7 @@
 
 #instalation-section .description{color:gray;font-weight:bold;margin-top:10px}
 
-.comparison-section{margin:30px 0px}.comparison-section .title-row{margin-bottom:40px}.comparison-section .inside-container,.comparison-section .outside-container,.comparison-section .example-col{height:100px}.comparison-section .example-col-outside,.comparison-section .outside-container{background-color:sandybrown;padding:0}.comparison-section .code-col{position:relative;left:40%}.comparison-section .primary-idented-tag{margin-left:20px}.comparison-section .example-col-outside{background-color:gold;border:2px solid darkmagenta}.comparison-section .example-col-outside span{bottom:25%;position:relative;top:25%}.comparison-section .outside-container .inside-container{background-color:cornflowerblue}
+#responsive-section{margin:30px 0px}#responsive-section .title-row{margin-bottom:40px}#responsive-section .inside-container,#responsive-section .outside-container,#responsive-section .example-col{height:100px}#responsive-section .example-col-outside,#responsive-section .outside-container{background-color:sandybrown;padding:0}#responsive-section .code-col{position:relative;left:40%}#responsive-section .primary-idented-tag{margin-left:20px}#responsive-section .example-col-outside{background-color:gold;border:2px solid darkmagenta}#responsive-section .outside-container .inside-container{background-color:cornflowerblue}
 
 body{overflow-x:hidden}body .row{margin:15px 0px}body .main-container{padding:0}
 
