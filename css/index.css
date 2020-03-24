@@ -6,9 +6,9 @@
 
 #instalation-section .description{color:gray;font-weight:bold;margin-top:10px}
 
-#responsive-section{margin:30px 0px}#responsive-section .title-row{margin-bottom:40px}#responsive-section .inside-container,#responsive-section .outside-container,#responsive-section .example-col{height:100px}#responsive-section .example-col-outside,#responsive-section .outside-container{background-color:sandybrown;padding:0}#responsive-section .code-col{position:relative;left:40%}#responsive-section .primary-idented-tag{margin-left:20px}#responsive-section .example-col-outside{background-color:gold;border:2px solid darkmagenta}#responsive-section .outside-container .inside-container{background-color:cornflowerblue}
+#responsive-section{margin:30px 0px}#responsive-section .title-row{margin-bottom:40px}#responsive-section .inside-container,#responsive-section .outside-container,#responsive-section .example-col{height:100px}#responsive-section .example-col-outside,#responsive-section .outside-container{background-color:sandybrown;padding:0}#responsive-section .primary-idented-tag{margin-left:20px}#responsive-section .example-col-outside{background-color:gold;border:2px solid darkmagenta;padding:30px 0px}#responsive-section .example-col-outside>span{font-weight:bold;font-size:small}#responsive-section .outside-container .inside-container{background-color:cornflowerblue}
 
 body{overflow-x:hidden}body .row{margin:15px 0px}body .main-container{padding:0}
 
-pre{overflow-y:hidden;white-space:normal}pre code{text-align:unset;white-space:nowrap}pre code .tag{color:#2f6f9f}pre code .atributes{color:#4f9fcf}pre code .commas-word{color:#d44950}
+pre{overflow-y:hidden;white-space:normal}pre .code-box{background-color:white;border:1px solid lightgray;padding:10px 5px;width:min-content}pre code{text-align:unset;white-space:nowrap}pre code .tag{color:#2f6f9f}pre code .atributes{color:#4f9fcf}pre code .commas-word{color:#d44950}.code-col{line-height:1.5;display:inline-block;vertical-align:middle}
 
