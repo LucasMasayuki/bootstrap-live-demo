@@ -1,20 +1,20 @@
 <template id="group-box">
     <div class="group-box-container">
         <div class="row">
-                <div class="col">
-                <p>Nº usp</p>
+            <div class="col">
+                <span>Nº usp</span>
             </div>
                 <div class="col">
-                <p>Nome</p>
+                <span>Nome</span>
             </div>
         </div>
         {{#group}}
             <div class="row">
                 <div class="col">
-                    <p>{{usp_number}}</p>
+                    <span>{{usp_number}}</span>
                 </div>
                 <div class="col">
-                    <p>{{name}}</p>
+                    <span class="name-text">{{name}}</span>
                 </div>
             </div>
         {{/group}}
