@@ -10,7 +10,7 @@
 
 #components-section .interval-col{margin:15px 0px}#components-section .collapse-components{margin-bottom:20px}#components-section .card-btn{margin-top:20px}#components-section .card-deck .card{background:initial}
 
-body{background:linear-gradient(90deg, #D3CCE3, #E9E4F0);color:white;overflow-x:hidden}body .card{background:linear-gradient(90deg, #6a3093, #a044ff);border:1px solid lightgray;border-radius:30px;box-shadow:0 6px 20px 0 rgba(0,0,0,0.05);margin:30px}body .row{margin:15px 0px}body .main-container{padding:0}body .text-box{border-radius:21px 21px 0px 0px;padding:20px}
+body{color:white;overflow-x:hidden}body .card{background:linear-gradient(90deg, #6a3093, #a044ff);border:1px solid lightgray;border-radius:30px;box-shadow:0 6px 20px 0 rgba(0,0,0,0.05);margin:30px}body .row{margin:15px 0px}body .main-container{padding:0}body .text-box{border-radius:21px 21px 0px 0px;padding:20px}body .primary-btn{background-color:#343a40 !important;border-radius:30px;color:white;font-weight:bolder;text-transform:uppercase}
 
 pre{background-color:#212529;border-radius:4px;color:white;overflow-y:hidden;padding:10px;white-space:normal}pre .code-box{padding:15px 20px;width:min-content}pre code{text-align:unset;white-space:nowrap}pre code .tag{color:#2f6f9f}pre code .atributes{color:#4f9fcf}pre code .commas-word{color:white}.code-col{line-height:1.5;display:inline-block;vertical-align:middle}.primary-idented-tag{margin-left:20px}
 
