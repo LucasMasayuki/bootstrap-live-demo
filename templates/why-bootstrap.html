@@ -1,11 +1,108 @@
 <template>
     <section id="why-bootstrap-section">
-        <div class="bg-light pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden card">
+        <div class="bg-light pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden card margin-15">
             <div class="my-3 py-3">
                 <h2 class="display-5">Por que utilizar bootstrap</h2>
+                <p>Todo site foi criado com base no framework bootstrap, basicamente o que o bootsrap nos permite é a redução de tempo de construção da estrtura html/css/js, com componentes e classes já definidos para poderem ser utilizados, economizando tempo, complexidade e número de linhas de código escritos e arquivos</p>
             </div>
-            <div class="text-box bg-dark shadow-sm mx-auto">
-                <p class="lead">Todo site foi criado com base no framework bootstrap, basicamente o que o bootsrap nos permite é a redução de tempo de construção da estrtura html/css/js, com componentes e classes já definidos para poderem ser utilizados, economizando tempo, complexidade e número de linhas de código escritos e arquivos</p>
+            <div class="text-box bg-primary-dark shadow-sm mx-auto">
+                <p>Abaixo um comparativo entre o código fonte do site sem e com bootstrap, apenas comparando o que precisaria ser escrito para possuir todas as possibilidades que o boostrap possibilita.</p>
+                <div class="card-deck">
+                    <div class="card main-bg">
+                        <div class="card-body">
+                            <h5 class="card-title">Sem bootsrap</h5>
+                            <table class="table table-bordered bg-white">
+                                <thead>
+                                    <tr>
+                                        <th>Tamanho do arquivo css</th>
+                                        <th>Número de linhas css</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>193 kb</td>
+                                        <td>10000 linhas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered bg-white">
+                                <thead>
+                                    <tr>
+                                        <th>Tamanho do arquivo js</th>
+                                        <th>Número de linhas js</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1312 kb</td>
+                                        <td>4523 linhas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="text-center">
+                                <a class="btn primary-btn active margin-bottom-15"
+                                    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css"
+                                    target="_blank">
+                                    <i class="fab fa-css3"></i>
+                                    Código css
+                                </a>
+                                <a class="btn primary-btn active margin-bottom-15"
+                                    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.js"
+                                    target="_blank">
+                                    <i class="fab fa-js"></i>
+                                    Código js
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card main-bg">
+                        <div class="card-body">
+                            <h5 class="card-title">Com bootsrap</h5>
+                            <table class="table table-bordered bg-white">
+                                <thead>
+                                    <tr>
+                                        <th>Tamanho do arquivo css</th>
+                                        <th>Número de linhas css</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>12 kb</td>
+                                        <td>162 linhas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered bg-white">
+                                <thead>
+                                    <tr>
+                                        <th>Tamanho do arquivo js</th>
+                                        <th>Número de linhas js</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>193 kb</td>
+                                        <td>227 linhas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="text-center">
+                                <a class="btn primary-btn active margin-bottom-15"
+                                    href="/index.bundle.js"
+                                    target="_blank">
+                                    <i class="fab fa-css3"></i>
+                                    Código css
+                                </a>
+                                <a class="btn primary-btn active margin-bottom-15"
+                                    href="/complete.js"
+                                    target="_blank">
+                                    <i class="fab fa-js"></i>
+                                    Código js
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

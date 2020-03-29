@@ -1,64 +1,66 @@
 <template>
     <section id="components-section">
         <div class="container-fluid">
-            <div class="card">
+            <div class="card margin-15">
                 <div class="card-body">
                     <h3 class="card-title">Exemplos de componentes do bootstrap</h3>
+                    <div class="card-text">
+                        <p>O bootstrap já fornece classes de css para criar varios tipos de componetes diferentes. Alguns exemplos deles são: </p>
+                    </div>
                     <div class="card-deck">
-                        <div class="card bg-dark">
+                        <div class="card main-bg margin-15">
                             <div class="card-body">
                                 <h5 class="card-title">Spinners</h5>
                                 <div class="spinner-border card-text" role="status">
                                     <span class="sr-only">Loading...</span>
                                 </div>
-                                <div class="card-btn card-text">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#spinner-loading">
-                                        código
-                                    </button>
-                                </div>
-                                <div class="modal fade" id="spinner-loading" tabindex="-1" role="dialog" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                                <figure>
-                                                    <pre class="pre pre-scrollable text-left">
-                                                        <code data-lang="html">
-                                                            <span class="tag">&lt;div</span>
-                                                            <span class="atributes"> class=</span>
-                                                            <span class="commas-word">"spinner-border card-text"</span>
-                                                            <span class="atributes"> role=</span>
-                                                            <span class="commas-word">"status"</span>
-                                                            <span class="tag">&gt;</span>
-                                                            <br>
-                                                            <span class="tag primary-idented-tag">&lt;span</span>
-                                                            <span class="atributes"> class=</span>
-                                                            <span class="commas-word">"sr-only"</span>
-                                                            <span class="tag">&gt;</span>
-                                                            <span class="atributes">Loading...</span>
-                                                            <span class="commas-word">"status"</span>
-                                                            <span class="tag">&lt;/span&gt;</span>
-                                                            <br>
-                                                            <span class="tag">&lt;/div&gt;</span>
-                                                        </code>
-                                                    </pre>
-                                                </figure>
-                                            </div>
+                            </div>
+                            <div class="card-btn card-text">
+                                <button type="button" class="btn primary-btn" data-toggle="modal" data-target="#spinner-loading">
+                                    código
+                                </button>
+                            </div>
+                            <div class="modal fade" id="spinner-loading" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <figure>
+                                                <pre class="pre pre-scrollable text-left">
+                                                    <code data-lang="html">
+                                                        <span class="tag">&lt;div</span>
+                                                        <span class="atributes"> class=</span>
+                                                        <span class="commas-word">"spinner-border card-text"</span>
+                                                        <span class="atributes"> role=</span>
+                                                        <span class="commas-word">"status"</span>
+                                                        <span class="tag">&gt;</span>
+                                                        <br>
+                                                        <span class="tag primary-idented-tag">&lt;span</span>
+                                                        <span class="atributes"> class=</span>
+                                                        <span class="commas-word">"sr-only"</span>
+                                                        <span class="tag">&gt;</span>
+                                                        <span class="atributes">Loading...</span>
+                                                        <span class="commas-word">"status"</span>
+                                                        <span class="tag">&lt;/span&gt;</span>
+                                                        <br>
+                                                        <span class="tag">&lt;/div&gt;</span>
+                                                    </code>
+                                                </pre>
+                                            </figure>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card bg-dark">
+                        <div class="card main-bg margin-15">
                             <div class="card-body">
                                 <h5 class="card-title">Badges</h5>
                                 <span class="badge badge-success">Success</span>
-                                <div class="card-btn card-text">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#badge">
-                                        código
-                                    </button>
-                                </div>
                             </div>
-
+                            <div class="card-btn card-text">
+                                <button type="button" class="btn primary-btn" data-toggle="modal" data-target="#badge">
+                                    código
+                                </button>
+                            </div>
                             <div class="modal fade" id="badge" tabindex="-1" role="dialog" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
@@ -70,7 +72,7 @@
                                                         <span class="atributes"> class=</span>
                                                         <span class="commas-word">"badge badge-succes"</span>
                                                         <span class="tag">&gt;</span>
-                                                        <span>Success</span>
+                                                        <span class="commas-word">Success</span>
                                                         <span class="tag">&lt;/span&gt;</span>
                                                     </code>
                                                 </pre>
@@ -82,28 +84,132 @@
                         </div>
                     </div>
                     <div class="card-deck">
-                        <div class="card bg-dark">
+                        <div class="card main-bg margin-15">
                             <div class="card-body">
-                                <h5 class="card-title">Carrossel</h5>
-                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block w-100" alt="...">
+                                <h5 class="card-title">Dropdown</h5>
+                                <div class="dropdown">
+                                    <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown link
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-btn card-text">
+                                <button type="button" class="btn primary-btn" data-toggle="modal" data-target="#dropdown-code">
+                                    código
+                                </button>
+                            </div>
+                            <div class="modal fade" id="dropdown-code" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <figure>
+                                                <pre class="pre pre-scrollable text-left">
+                                                    <code data-lang="html">
+                                                        <span class="tag">&lt;div</span>
+                                                        <span class="atributes"> class=</span>
+                                                        <span class="commas-word">"dropdown"</span>
+                                                        <span class="tag">&gt;</span>
+                                                        <br>
+                                                        <span class="tag primary-idented-tag">&lt;a</span>
+                                                        <span class="atributes"> class=</span>
+                                                        <span class="commas-word">"btn btn-secondary dropdown-toggle"</span>
+                                                        <span class="atributes"> href=</span>
+                                                        <span class="commas-word">"#"</span>
+                                                        <span class="atributes"> role=</span>
+                                                        <span class="commas-word">"button"</span>
+                                                        <span class="atributes"> id=</span>
+                                                        <span class="commas-word">"dropdownMenuLink"</span>
+                                                        <span class="atributes"> data-toggle=</span>
+                                                        <span class="commas-word">"dropdown"</span>
+                                                        <span class="atributes"> aria-haspopup=</span>
+                                                        <span class="commas-word">"true"</span>
+                                                        <span class="atributes"> aria-expanded=</span>
+                                                        <span class="commas-word">"false"</span>
+                                                        <span class="commas-word">Dropdown Link</span>
+                                                        <span class="tag">&lt;/a&gt;</span>
+                                                        <br>
+                                                        <span class="tag primary-idented-tag">&lt;div</span>
+                                                        <span class="atributes"> class=</span>
+                                                        <span class="commas-word">"dropdown-menu"</span>
+                                                        <span class="atributes"> aria-labelledby=</span>
+                                                        <span class="commas-word">"dropdownMenuLink"</span>
+                                                        <span class="tag">&gt;</span>
+                                                        <br>
+                                                        <span class="tag secondary-idented-tag">&lt;a</span>
+                                                        <span class="atributes"> class=</span>
+                                                        <span class="commas-word">"dropdown-item"</span>
+                                                        <span class="atributes"> href=</span>
+                                                        <span class="commas-word">"#"</span>
+                                                        <span class="tag">&gt;</span>
+                                                        <span class="commas-word">"Active"</span>
+                                                        <span class="tag">&lt;/a&gt;</span>
+                                                        <br>
+                                                        <span class="tag secondary-idented-tag">&lt;a</span>
+                                                        <span class="atributes"> class=</span>
+                                                        <span class="commas-word">"dropdown-item"</span>
+                                                        <span class="atributes"> href=</span>
+                                                        <span class="commas-word">"#"</span>
+                                                        <span class="tag">&gt;</span>
+                                                        <span class="commas-word">"Action"</span>
+                                                        <span class="tag">&lt;/a&gt;</span>
+                                                        <br>
+                                                        <span class="tag secondary-idented-tag">&lt;a</span>
+                                                        <span class="atributes"> class=</span>
+                                                        <span class="commas-word">"dropdown-item"</span>
+                                                        <span class="atributes"> href=</span>
+                                                        <span class="commas-word">"#"</span>
+                                                        <span class="tag">&gt;</span>
+                                                        <span class="commas-word">"Something else here"</span>
+                                                        <span class="tag">&lt;/a&gt;</span>
+                                                        <br>
+                                                        <span class="tag primary-idented-tag">&lt;/div&gt;</span>
+                                                        <br>
+                                                        <span class="tag">&lt;/div&gt;</span>
+                                                    </code>
+                                                </pre>
+                                            </figure>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card bg-dark">
+                        <div class="card main-bg margin-15">
                             <div class="card-body">
                                 <h5 class="card-title">Buttons</h5>
-                                <button type="button" class="btn btn-primary">Primary</button>
+                                <button type="button" class="btn btn-primary">Button</button>
+                            </div>
+                            <div class="card-btn card-text">
+                                <button type="button" class="btn primary-btn" data-toggle="modal" data-target="#button-code">
+                                    código
+                                </button>
+                            </div>
+                            <div class="modal fade" id="button-code" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <figure>
+                                                <pre class="pre pre-scrollable text-left">
+                                                    <code data-lang="html">
+                                                        <span class="tag">&lt;button</span>
+                                                        <span class="atributes"> type=</span>
+                                                        <span class="commas-word">"button"</span>
+                                                        <span class="atributes"> class=</span>
+                                                        <span class="commas-word">"btn btn-secondary"</span>
+                                                        <span class="tag">&gt;</span>
+                                                        <span class="commas-word">Button</span>
+                                                        <span class="tag">&lt;/button&gt;</span>
+                                                    </code>
+                                                </pre>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

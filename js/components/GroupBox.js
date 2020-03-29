@@ -13,12 +13,12 @@ export default class GroupBox {
     static getGroup() {
         return [
             {
-                usp_number: 10258970,
-                name: 'Lucas Masayuki Tamaribuchi',
+                usp_number: 10314875,
+                name: 'Leonardo Coelho Negri',
             },
             {
-                usp_number: 10258970,
-                name: 'Lucas Masayuki Tamaribuchi',
+                usp_number: 10403280,
+                name: 'Lucas Gabriel Arantes Moreira',
             },
             {
                 usp_number: 10258970,
