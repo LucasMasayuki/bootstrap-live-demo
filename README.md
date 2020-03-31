@@ -17,4 +17,8 @@ git clone git@github.com:LucasMasayuki/bootstrap-live-demo.git
 ## Rodando o projeto
 
 - `yarn start` para iniciar um mini servidor python.
-- `yarn watch` para compilar o js e css.
+- `yarn run watch` para compilar o js e css.
+- `yarn run deploy` para deployar a aplicacao no github pages
+
+## Github Page
+https://lucasmasayuki.github.io/bootstrap-live-demo/
