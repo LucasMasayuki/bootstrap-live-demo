@@ -17,12 +17,12 @@ export default class GroupBox {
                 name: 'Leonardo Coelho Negri',
             },
             {
-                usp_number: 10403280,
-                name: 'Lucas Gabriel Arantes Moreira',
+                usp_number: 9360951,
+                name: 'Lucas Borelli Amarali',
             },
             {
-                usp_number: 10258970,
-                name: 'Lucas Masayuki Tamaribuchi',
+                usp_number: 10403280,
+                name: 'Lucas Gabriel Arantes Moreira',
             },
             {
                 usp_number: 10258970,
